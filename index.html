@@ -11,26 +11,31 @@
 </head>
 <body>
     <header>
-        <h1 class="logo"><img src="./logo.png" alt="Logo" class="imagem"></h1>
+        <h1 class="logo"><img src="./imagens/logo.png" alt="Logo" class="imagem"></h1>
     </header>
     <main>
-        <div class="entrada-dados">
-            <fieldset class="area-texto">
-            <form action="get">
+        <div class="entrada-dados">   
             <textarea name="textoEntrada" id="texto-entrada" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
-            </form>
+            <p class="aviso"><img src="./imagens/bi_exclamation-circle-fill.svg" alt="exclamacao">Apenas letras minúsculas e sem acento.</p>   
+        </div>  
 
-            
-        
-            </fieldset>
-            
-            <fieldset class="botoes">
-                <legend><img src="./bi_exclamation-circle-fill.svg" alt="exclamacao">Apenas letras minúsculas e sem acento.</legend>
-                <input type="submit" value="Criptografar" class="criptografar">
-                <input type="submit" value="Descriptografar" class="descriptografar">
-            </fieldset>
+        <div class="botoes">
+            <input type="submit" value="Criptografar" class="criptografar">
+            <input type="submit" value="Descriptografar" class="descriptografar">
         </div>
         
+        
+        <aside classe="saida-dados">
+            <img src="./imagens/High quality products 1 1.svg" alt="vetor busca">
+
+            <div class="textos-aside">
+                <p class="titulo-aside">Nenhuma mensagem encontrada</p>
+                <p class="subtitulo-aside">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            
+        </aside>
+        
+
         
 
     </main>

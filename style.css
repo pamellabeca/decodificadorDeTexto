@@ -1,3 +1,5 @@
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500&display=swap');
+
 header {
     margin-top: 40px;
     margin-left: 40px;
@@ -16,36 +18,55 @@ header {
     height: 50px;    
 }
 
+.entrada-dados{
+    width: 685px;
+    background-color: #cccccc;
+    margin-top: 80px;
+}
+
+
+#texto-entrada, .area-texto{
+   display: inline;
+   width: 95%;
+   border-radius: 25px;
+}
+.aviso{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.botoes{
+    
+}
+
+.aviso, .botoes{
+    margin-top: 15px;
+}
+
 .criptografar{
-    width: 328px;
-    height: 72px;
-
-    border-radius: 24px;
-    padding: 24px;
-
-    font-size: 20px;
+    margin-right: 24px;
     background: #5c101c;
-
-    color: white;
-
     border: none;
-
-    cursor: pointer;
 }
 
 .descriptografar{
+    background: #9b1b30;
+    border: #5c101c;
+}
+
+.criptografar, .descriptografar{
     width: 328px;
     height: 72px;
 
     border-radius: 24px;
     padding: 24px;
-
-    font-size: 20px;
-    background: #9b1b30;
-
+    
     color: white;
-
-    border: #5c101c;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
 
     cursor: pointer;
 }
+
