@@ -8,15 +8,16 @@
 
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <header>
         <h1 class="logo"><img src="./imagens/logo.png" alt="Logo" class="imagem"></h1>
     </header>
     <main class="container">
-        <div class="input" id="input">
+        <div class="grupoInput">
             <div class="entrada-dados">   
-                <textarea name="textoEntrada" id="texto-entrada" cols="30" rows="10" placeholder="Digite seu texto aqui..."></textarea>
+                <textarea name="textoEntrada" id="textoEntrada" cols="30" rows="10" placeholder="Digite seu texto aqui..."></textarea>
                 <span class="aviso">
                     <img src="./imagens/bi_exclamation-circle-fill.svg" alt="exclamacao">
                     <p class="texto-aviso">Apenas letras minúsculas e sem acento.</p>
@@ -25,8 +26,8 @@
             </div>  
             
             <div class="botoes">
-                <input type="submit" value="Criptografar" class="criptografar" id="criptografar">
-                <input type="submit" value="Descriptografar" class="descriptografar">
+                <button onclick="criptoSaida()" class="criptografar" id="criptografar">Criptografar</button>
+                <button onclick="descriptoSaida()" class="descriptografar" id="descriptografar">Descriptografar</button>
             </div>
         </div>
         
@@ -53,49 +54,8 @@
             <li><a href="https://twitter.com/pamellascodes" target="_blank"><img id="socialMidia" class="midiaimg" src="./logosSociais/twitter 1.svg" alt="Twitter"><i class="fa fa-youtube"></i></a></li>
           </ul>
     </footer>
-    <script>
-        var textoInput = document.querySelector("#texto-entrada");
-        var textoOutput = document.querySelector("#output");
-
-        function criptoSaida (){
-            texto = textoInput.value;
-
-            var saidaCripto = texto.replace(/a/g, "ai")
-            .replace(/e/g, "enter")
-            .replace(/i/g, "imes")
-            .replace(/o/g, "ober")
-            .replace(/u/g, "ufat");
-
-            document.getElementById('output').innerHTML = '<textarea readonly id="texto-entrada">' + saidatCripto + '</textarea>' + '<button class="btn-copiar" id="copiar" onclick="copiar()">Copiar</button>'
-        }
-
-        function decriptoSaida (){
-            texto = textoInput.value;
-
-            var saidaCripto = texto.replace(/ai/g, "a")
-            .replace(/enter/g, "e")
-            .replace(/imes/g, "i")
-            .replace(/ober/g, "o")
-            .replace(/ufat/g, "u");
-
-            document.getElementById('output').innerHTML = '<textarea readonly id="texto-entrada">' + saidatCripto + '</textarea>' + '<button class="btn-copiar" id="copiar" onclick="copiar()">Copiar</button>'
-        }
-
-        function copiar() {
-
-            var textoCopy = document.getElementById('resultado');
-
-            textoCopy.select();
-            document.execCommand('copy');
-        }
-
-        var botaoCripto = document.querySelector("#criptografar");
-        var botaodesCripto = document.querySelector("#descriptografar");
-
-        botaoCripto.onclick = criptoSaida();
-        botaodesCripto.onclick = decriptoSaida();
-
-
+    <script src="main.js">
+        
     </script>
 </body>
 </html>
