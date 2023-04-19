@@ -81,6 +81,20 @@
             document.getElementById('output').innerHTML = '<textarea readonly id="texto-entrada">' + saidatCripto + '</textarea>' + '<button class="btn-copiar" id="copiar" onclick="copiar()">Copiar</button>'
         }
 
+        function copiar() {
+
+            var textoCopy = document.getElementById('resultado');
+
+            textoCopy.select();
+            document.execCommand('copy');
+        }
+
+        var botaoCripto = document.querySelector("#criptografar");
+        var botaodesCripto = document.querySelector("#descriptografar");
+
+        botaoCripto.onclick = criptoSaida();
+        botaodesCripto.onclick = decriptoSaida();
+
 
     </script>
 </body>
