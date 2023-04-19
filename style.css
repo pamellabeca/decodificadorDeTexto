@@ -166,13 +166,14 @@ ul{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    cursor: pointer;
+    
     margin-top: 16px;
 }
 
 ul li {
     margin-right: 16px;
     stroke: black;
+    cursor: pointer;
   }
 
 .midiaimg{

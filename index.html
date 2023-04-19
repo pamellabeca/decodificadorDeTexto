@@ -25,7 +25,7 @@
             </div>  
             
             <div class="botoes">
-                <input type="submit" value="Criptografar" class="criptografar">
+                <input type="submit" value="Criptografar" class="criptografar" id="criptografar">
                 <input type="submit" value="Descriptografar" class="descriptografar">
             </div>
         </div>
@@ -53,5 +53,35 @@
             <li><a href="https://twitter.com/pamellascodes" target="_blank"><img id="socialMidia" class="midiaimg" src="./logosSociais/twitter 1.svg" alt="Twitter"><i class="fa fa-youtube"></i></a></li>
           </ul>
     </footer>
+    <script>
+        var textoInput = document.querySelector("#texto-entrada");
+        var textoOutput = document.querySelector("#output");
+
+        function criptoSaida (){
+            texto = textoInput.value;
+
+            var saidaCripto = texto.replace(/a/g, "ai")
+            .replace(/e/g, "enter")
+            .replace(/i/g, "imes")
+            .replace(/o/g, "ober")
+            .replace(/u/g, "ufat");
+
+            document.getElementById('output').innerHTML = '<textarea readonly id="texto-entrada">' + saidatCripto + '</textarea>' + '<button class="btn-copiar" id="copiar" onclick="copiar()">Copiar</button>'
+        }
+
+        function decriptoSaida (){
+            texto = textoInput.value;
+
+            var saidaCripto = texto.replace(/ai/g, "a")
+            .replace(/enter/g, "e")
+            .replace(/imes/g, "i")
+            .replace(/ober/g, "o")
+            .replace(/ufat/g, "u");
+
+            document.getElementById('output').innerHTML = '<textarea readonly id="texto-entrada">' + saidatCripto + '</textarea>' + '<button class="btn-copiar" id="copiar" onclick="copiar()">Copiar</button>'
+        }
+
+
+    </script>
 </body>
 </html>
