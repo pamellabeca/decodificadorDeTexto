@@ -13,11 +13,15 @@
     <header>
         <h1 class="logo"><img src="./imagens/logo.png" alt="Logo" class="imagem"></h1>
     </header>
-    <main>
-        <div class="input">
+    <main class="container">
+        <div class="input" id="input">
             <div class="entrada-dados">   
-            <textarea name="textoEntrada" id="texto-entrada" cols="30" rows="10" placeholder="Digite seu texto aqui..."></textarea>
-            <p class="aviso"><img src="./imagens/bi_exclamation-circle-fill.svg" alt="exclamacao">Apenas letras minúsculas e sem acento.</p>   
+                <textarea name="textoEntrada" id="texto-entrada" cols="30" rows="10" placeholder="Digite seu texto aqui..."></textarea>
+                <span class="aviso">
+                    <img src="./imagens/bi_exclamation-circle-fill.svg" alt="exclamacao">
+                    <p class="texto-aviso">Apenas letras minúsculas e sem acento.</p>
+                </span>
+                   
             </div>  
             
             <div class="botoes">
@@ -28,18 +32,26 @@
         
 
         <aside classe="saida-dados">
-            <div class="aside">
-                <img src="./imagens/High quality products 1 1.svg" alt="vetor busca">
+            <div class="aside" id="output">
+                <img src="./imagens/High quality products 1 1.svg" alt="vetor busca" class="vetor">
 
                 <div class="textos-aside">
                     <p class="titulo-aside">Nenhuma mensagem encontrada</p>
                     <p class="subtitulo-aside">Digite um texto que você deseja criptografar ou descriptografar.</p>
                 </div>
-            </div>
-            
-            
+            </div>   
         </aside>         
 
     </main>
+    <footer>
+        <p>&copy; Copyrigth - Pamella Silva</p>
+        <ul class="ulSideBar">
+            <li><a href="https://github.com/pamellabeca" target="_blank"><img id="socialMidia" class="midiaimg" src="./logosSociais/github 1.svg" alt="Github"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/pamellabeca/" target="_blank"><img id="socialMidia" class="midiaimg"src="./logosSociais/instagram 1.svg" alt="Instagram"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/pamella-silva-dev/" target="_blank"><img id="socialMidia" class="midiaimg" src="./logosSociais/linkedin 1.svg" alt="Linkedin"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="mailto:pamellarebecabispo@gmail.com" target="_blank"><img id="socialMidia" class="midiaimg" src="./logosSociais/mail 1.svg" alt="E-mail"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://twitter.com/pamellascodes" target="_blank"><img id="socialMidia" class="midiaimg" src="./logosSociais/twitter 1.svg" alt="Twitter"><i class="fa fa-youtube"></i></a></li>
+          </ul>
+    </footer>
 </body>
 </html>
