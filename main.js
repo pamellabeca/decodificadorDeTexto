@@ -48,8 +48,10 @@ function descriptoSaida (){
 
 function copiar() {
     var textoCopy = document.getElementById('texto-Entrada');
-    textoCopy.select();
-    document.execCommand("copy");
-    alert("Texto copiado para área de transferência");
+    navigator.clipboard.writeText(textoCopy.value).then(function() {
+        alert("Texto copiado para área de transferência");
+    }, function() {
+        alert("Não foi possível copiar o texto");
+    });
 }
   
