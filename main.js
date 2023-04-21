@@ -19,7 +19,7 @@ function criptoSaida (){
         }
     });
 
-    document.getElementById('output').innerHTML = '<textarea readonly id="textoEntrada">' + saidaCripto + '</textarea>' + '<button class="btn-copiar" id="copiar" onclick="copiar()">Copiar</button>'
+    document.getElementById('output').innerHTML = '<textarea readonly id="texto-Entrada">' + saidaCripto + '</textarea>' + '<button class="btn-copiar" id="copiar" onclick="copiar()">Copiar</button>'
 }
 
 function descriptoSaida (){
@@ -42,19 +42,14 @@ function descriptoSaida (){
         }
     });
 
-    document.getElementById('output').innerHTML = '<textarea readonly id="textoEntrada">' + saidaCripto + '</textarea>' + '<button class="btn-copiar" id="copiar" onclick="copiar()">Copiar</button>'
+    document.getElementById('output').innerHTML = '<textarea readonly id="texto-Entrada">' + saidaCripto + '</textarea>' + '<button class="btn-copiar" id="copiar" onclick="copiar()">Copiar</button>'
 }
 
 
 function copiar() {
-    var textoCopy = document.getElementById('textoEntrada');
+    var textoCopy = document.getElementById('texto-Entrada');
     textoCopy.select();
-    navigator.clipboard.writeText(textoCopy.value)
-      .then(() => {
-        alert("Texto copiado para área de transferência");
-      })
-      .catch((err) => {
-        console.error('Erro ao copiar texto: ', err);
-    });
-  }
+    document.execCommand("copy");
+    alert("Texto copiado para área de transferência");
+}
   
