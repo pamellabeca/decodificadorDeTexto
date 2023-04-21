@@ -30,6 +30,11 @@ body{
     left: 200px;
 }
 
+textarea{
+    border: none;
+    outline: none;
+    background-color: none;
+}
 #textoEntrada{
     display: inline-block;
     width: 100%;
@@ -80,7 +85,7 @@ body{
     border: #5c101c;
 }
 
-.criptografar, .descriptografar{
+.criptografar, .descriptografar, .btn-copiar{
     width: 328px;
     height: 67px;
 
@@ -95,6 +100,10 @@ body{
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 
+}
+
+.btn-copiar{
+    color: #5c101c;
 }
 
 .descriptografar:hover{
