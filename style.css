@@ -227,3 +227,107 @@ ul li {
 
     resize: none;
 }
+
+@media screen and (max-width: 768px) {
+
+    main{
+        height: auto;
+        max-width: 768px;
+    }
+    .container {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+      
+    }
+  
+    .grupoInput {
+        position: static;
+        max-width: 768px;
+        margin-top: 24px;
+        text-align: center;
+        justify-items: center;
+      
+    }
+  
+    aside{
+        display: inline-block;
+    
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: 100%;
+        text-align: center;
+        left: 6px;
+        background-color: white;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+    
+        margin-top: 30px;
+        box-sizing: border-box;
+
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+    #output .vetor .textos-aside{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+  
+    #textoEntrada,
+    .textos-aside {
+      font-size: 24px;
+      text-align: center;
+    }
+  
+    .botoes {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+    }
+  
+    .criptografar,
+    .descriptografar,
+    .btn-copiar {
+      width: 100%;
+      margin-top: 16px;
+    }
+
+    .criptografar{
+        background: #5c101c;
+        border: none;
+    }
+    
+    .descriptografar{
+        background: #9b1b30;
+        border: #5c101c;
+    }
+    
+    .criptografar, .descriptografar{
+        width: 328px;
+        height: 67px;
+    
+        border-radius: 24px;
+        padding: 24px;
+        
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+    
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    
+    }
+
+    footer{
+        order: 2;
+    }
+}
+  
